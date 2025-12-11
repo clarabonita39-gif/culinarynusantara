@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Nusantara: Warisan Rasa Indonesia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Kuliner Nusantara</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#makanan">Daftar Makanan</a></li>
+                    <li><a href="#katalog-section">Katalog Bahan</a></li> 
+                    <li><a href="#kerjasama">Kerja Sama</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-transparent"> 
+            <div class="container hero-content">
+                <h2>Selamat Datang di Surga Rasa Indonesia</h2>
+                <p>Temukan cerita, resep, dan kekayaan rempah di balik setiap hidangan. Mari lestarikan warisan kuliner Indonesia.</p>
+                <a href="#makanan" class="btn btn-primary">Jelajahi Kuliner</a>
+            </div>
+            
+            <div class="floating-icons hero-icons">
+                <img src="images/satay.png" alt="Satay Icon" class="float-item icon-1">
+                <img src="images/risol.png" alt="Risol Icon" class="float-item icon-2">
+                <img src="images/onde-onde.png" alt="Onde-onde Icon" class="float-item icon-3">
+            </div>
+        </section>
+
+        
+        <section id="makanan">
+            <div class="container center-text">
+                <h2 class="section-title">Mahakarya Kuliner Pilihan & Lainnya 🍜</h2> 
+                
+                <div id="top-kuliner-tagline" class="center-text">
+                    TOP 3 KULINER NUSANTARA
+                </div>
+                
+                <div class="floating-icons food-icons">
+                    <img src="images/nasigoreng.png" alt="Nasi Goreng Icon" class="float-item icon-4">
+                    <img src="images/lemper.png" alt="Lemper Icon" class="float-item icon-5">
+                </div>
+                <div id="food-list" class="food-grid">
+                    </div>
+            </div>
+        </section>
+        
+        <section id="katalog-section" class="secondary-bg center-text">
+            <div class="container">
+                <h2 class="section-title">Cek Harga Bahan Baku Harian 🛒</h2>
+                <p style="margin-bottom: 30px;">
+                    Dapatkan daftar harga estimasi bahan baku segar kami.
+                </p>
+                <button class="btn btn-secondary btn-large" onclick="displayIngredientCatalogModal()">Lihat Katalog Bahan Baku Lengkap</button>
+            </div>
+        </section>
+
+
+        <section id="kerjasama">
+            <div class="container form-layout">
+                <h2 class="section-title">Peluang Kerja Sama 🤝</h2>
+                
+                <p class="text-box-overlay center-text">
+                    Kami membuka pintu kolaborasi di seluruh dunia. Mari bersama-sama melestarikan dan memperkenalkan warisan kuliner Indonesia.
+                </p>
+                
+                <form id="collaboration-form" class="form-style"> 
+                    <input type="text" name="nama" placeholder="Nama Perusahaan / Individu" required>
+                    <input type="email" name="email" placeholder="Email Kontak" required>
+                    <input type="text" name="negara" placeholder="Negara Asal" required>
+                    <textarea name="deskripsi" placeholder="Jelaskan jenis kerjasama yang Anda tawarkan" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Kirim Proposal</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kuliner Nusantara. Dibuat dengan Cinta untuk Warisan Rasa Indonesia.</p>
+        </div>
+    </footer>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
